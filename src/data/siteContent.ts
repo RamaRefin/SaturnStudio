@@ -19,10 +19,14 @@ export type Testimonial = {
 };
 
 export type PricingPlan = {
+  slug: string;
   name: string;
   price: string;
   highlight: boolean;
   items: string[];
+  summary: string;
+  description: string;
+  idealFor: string;
 };
 
 export const contactDetails = {
@@ -86,21 +90,69 @@ export const processSteps = ['Konsultasi', 'Perencanaan', 'Desain', 'Development
 
 export const pricingPlans: PricingPlan[] = [
   {
+    slug: '/pricing/landing-page',
     name: 'Landing Page',
     price: 'Rp499.000',
     highlight: false,
+    summary: 'Halaman fokus konversi untuk kampanye, produk, atau promosi singkat.',
+    description:
+      'Paket landing page cocok untuk bisnis yang ingin satu halaman ringkas dengan alur yang jelas, visual yang kuat, dan ajakan aksi yang langsung mengarah ke kontak atau order.',
+    idealFor: 'Cocok untuk promo produk tunggal, event, webinar, dan lead generation.',
     items: [],
   },
   {
+    slug: '/pricing/company-profile',
     name: 'Company Profile',
     price: 'Rp1.499.000',
     highlight: true,
+    summary: 'Website profesional untuk membangun kredibilitas dan kepercayaan bisnis.',
+    description:
+      'Paket company profile menampilkan identitas bisnis secara lengkap, mulai dari profil, layanan, portofolio, hingga jalur kontak yang rapi dan mudah diakses.',
+    idealFor: 'Cocok untuk perusahaan jasa, agensi, studio, dan brand yang ingin tampil premium.',
     items: [],
   },
   {
+    slug: '/pricing/e-commerce-website',
     name: 'E-Commerce Website',
     price: 'Rp2.899.000',
     highlight: false,
+    summary: 'Toko online untuk menampilkan katalog, produk, dan proses pemesanan.',
+    description:
+      'Paket e-commerce dibuat untuk bisnis yang ingin menjual produk secara langsung melalui website dengan katalog yang jelas dan pengalaman belanja yang mudah.',
+    idealFor: 'Cocok untuk brand fashion, makanan, aksesoris, dan toko online kecil sampai menengah.',
+    items: [],
+  },
+  {
+    slug: '/pricing/game-2d-basic',
+    name: 'Game 2D Basic',
+    price: 'Rp5.999.000',
+    highlight: false,
+    summary: 'Paket awal untuk game 2D sederhana dengan mekanik inti yang solid.',
+    description:
+      'Paket basic cocok untuk prototype, pembelajaran, atau game kecil yang membutuhkan sistem permainan dasar, tampilan rapi, dan implementasi cepat.',
+    idealFor: 'Cocok untuk ide awal game, prototype pitching, dan proyek edukasi.',
+    items: [],
+  },
+  {
+    slug: '/pricing/game-2d-standard',
+    name: 'Game 2D Standard',
+    price: 'Rp7.999.000',
+    highlight: false,
+    summary: 'Paket menengah dengan fitur lebih lengkap dan polish visual lebih baik.',
+    description:
+      'Paket standard menambahkan lebih banyak konten, variasi level, dan penyempurnaan tampilan agar game terasa lebih lengkap dan menarik untuk dimainkan.',
+    idealFor: 'Cocok untuk game indie kecil yang butuh variasi level dan sistem progres.',
+    items: [],
+  },
+  {
+    slug: '/pricing/game-2d-expert',
+    name: 'Game 2D Expert',
+    price: 'Rp11.999.000',
+    highlight: false,
+    summary: 'Paket paling lengkap untuk game 2D dengan scope yang lebih serius.',
+    description:
+      'Paket expert ditujukan untuk proyek yang membutuhkan lebih banyak detail, konten, dan penyempurnaan gameplay agar siap dipresentasikan atau dikembangkan lebih lanjut.',
+    idealFor: 'Cocok untuk game yang ingin ditingkatkan ke tahap presentasi, demo, atau produksi lanjutan.',
     items: [],
   },
 ];

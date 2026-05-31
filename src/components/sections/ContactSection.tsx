@@ -3,7 +3,17 @@ import { contactDetails } from '../../data/siteContent';
 import { buildContactMessage } from '../../utils/contact';
 import { IconArrow, Reveal, SectionHeading } from '../ui';
 
-export function ContactSection() {
+type ContactSectionProps = {
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+};
+
+export function ContactSection({
+  eyebrow = 'Contact',
+  title = 'Siap Memiliki Website Profesional?',
+  description = 'Konsultasikan kebutuhan website Anda sekarang dan dapatkan solusi terbaik untuk bisnis Anda.',
+}: ContactSectionProps) {
   const [formData, setFormData] = useState({ name: '', email: '', whatsapp: '', needs: '' });
 
   const waLink = useMemo(() => {
@@ -23,9 +33,9 @@ export function ContactSection() {
         <div>
           <Reveal>
             <SectionHeading
-              eyebrow="Contact"
-              title="Siap Memiliki Website Profesional?"
-              description="Konsultasikan kebutuhan website Anda sekarang dan dapatkan solusi terbaik untuk bisnis Anda."
+              eyebrow={eyebrow}
+              title={title}
+              description={description}
             />
           </Reveal>
           <div className="mt-8 space-y-4">

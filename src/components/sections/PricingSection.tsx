@@ -8,7 +8,8 @@ export function PricingSection() {
         <Reveal>
           <SectionHeading
             eyebrow="Pricing"
-            title="Pilih Paket yang Sesuai dengan Kebutuhan Anda" color="white"
+            title="Pilih Paket yang Sesuai dengan Kebutuhan Anda"
+            color="white"
             description="Paket dibuat transparan agar mudah memilih solusi yang paling relevan."
           />
         </Reveal>
@@ -25,6 +26,7 @@ export function PricingSection() {
                   )}
                 </div>
                 <div className={`mt-6 text-4xl font-bold tracking-tight ${plan.highlight ? 'text-space' : 'text-white'}`}>{plan.price}</div>
+                <p className={`mt-4 text-sm leading-7 ${plan.highlight ? 'text-space/75' : 'text-white/70'}`}>{plan.summary}</p>
                 <ul className="mt-8 space-y-4 text-sm leading-7">
                   {plan.items.map((item) => (
                     <li key={item} className="flex items-center gap-3">
@@ -37,7 +39,7 @@ export function PricingSection() {
                 </ul>
                 <div className="mt-8">
                   <a
-                    href="#contact"
+                    href={plan.slug}
                     className={`inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold transition duration-300 ${
                       plan.highlight ? 'bg-space text-white hover:bg-blue' : 'border border-white/15 bg-white/10 text-white hover:bg-white/15'
                     }`}
@@ -55,7 +57,7 @@ export function PricingSection() {
             href="#contact"
             className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/10 px-6 py-3.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-white/15"
           >
-            Lihat paket lainnya
+            Konsultasi paket custom
             <IconArrow />
           </a>
         </div>
