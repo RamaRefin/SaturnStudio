@@ -1,4 +1,4 @@
-import { pricingPlans } from '../../data/siteContent';
+import { PricingPlan1 } from '../../data/siteContent';
 import { IconArrow, IconCheck, Reveal, SectionHeading } from '../ui';
 
 export function PricingSection() {
@@ -14,7 +14,7 @@ export function PricingSection() {
           />
         </Reveal>
         <div className="mt-12 grid gap-5 lg:grid-cols-3">
-          {pricingPlans.map((plan, index) => (
+          {PricingPlan1.map((plan, index) => (
             <Reveal key={plan.name} delay={index * 100}>
               <article className={`rounded-[1.9rem] border p-6 transition duration-300 hover:-translate-y-1 ${plan.highlight ? 'border-orange/30 bg-white text-space shadow-glow' : 'border-white/10 bg-white/5 text-white'}`}>
                 <div className="flex items-center justify-between">

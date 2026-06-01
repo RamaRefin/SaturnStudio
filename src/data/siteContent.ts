@@ -18,6 +18,15 @@ export type Testimonial = {
   role: string;
 };
 
+export type PricingPlan1 = {
+  slug: string;
+  name: string;
+  price: string;
+  highlight: boolean;
+  summary: string;
+  items: string[];
+}
+
 export type PricingPlan = {
   slug: string;
   name: string;
@@ -42,7 +51,7 @@ export const services: Service[] = [
   { title: 'Website UMKM', description: 'Membantu UMKM tampil profesional secara online.' },
   { title: 'Website Personal Branding', description: 'Bangun citra profesional melalui website pribadi.' },
   { title: 'Website Portofolio', description: 'Tampilkan karya dan pengalaman secara elegan.' },
-  { title: 'Maintenance Website', description: 'Perawatan dan pembaruan website secara berkala.' },
+  { title: 'Game Development 2D ', description: 'Pembuatan game 2D mobile' },
 ];
 
 export const features: Feature[] = [
@@ -98,7 +107,13 @@ export const pricingPlans: PricingPlan[] = [
     description:
       'Paket landing page cocok untuk bisnis yang ingin satu halaman ringkas dengan alur yang jelas, visual yang kuat, dan ajakan aksi yang langsung mengarah ke kontak atau order.',
     idealFor: 'Cocok untuk promo produk tunggal, event, webinar, dan lead generation.',
-    items: [],
+    items: [
+      '1 halaman landing page responsif',
+      'Copy section utama (hero, benefit, CTA)',
+      'Form kontak ke WhatsApp/email',
+      'Integrasi Google Maps atau tombol arah',
+      'Basic SEO on-page dan kecepatan ringan',
+    ],
   },
   {
     slug: '/pricing/company-profile',
@@ -109,7 +124,13 @@ export const pricingPlans: PricingPlan[] = [
     description:
       'Paket company profile menampilkan identitas bisnis secara lengkap, mulai dari profil, layanan, portofolio, hingga jalur kontak yang rapi dan mudah diakses.',
     idealFor: 'Cocok untuk perusahaan jasa, agensi, studio, dan brand yang ingin tampil premium.',
-    items: [],
+    items: [
+      'Hingga 6 halaman utama (Home, About, Service, Portfolio, Contact, FAQ)',
+      'Struktur navigasi dan copywriting dasar profesional',
+      'Section portofolio/project showcase',
+      'Form inquiry dengan validasi data',
+      'Setup dasar SEO + metadata sosial',
+    ],
   },
   {
     slug: '/pricing/e-commerce-website',
@@ -120,7 +141,13 @@ export const pricingPlans: PricingPlan[] = [
     description:
       'Paket e-commerce dibuat untuk bisnis yang ingin menjual produk secara langsung melalui website dengan katalog yang jelas dan pengalaman belanja yang mudah.',
     idealFor: 'Cocok untuk brand fashion, makanan, aksesoris, dan toko online kecil sampai menengah.',
-    items: [],
+    items: [
+      'Katalog produk dan kategori dinamis',
+      'Halaman detail produk + galeri foto',
+      'Keranjang belanja dan checkout sederhana',
+      'Integrasi pembayaran transfer/manual confirmation',
+      'Dashboard admin mini untuk update produk',
+    ],
   },
   {
     slug: '/pricing/game-2d-basic',
@@ -131,7 +158,13 @@ export const pricingPlans: PricingPlan[] = [
     description:
       'Paket basic cocok untuk prototype, pembelajaran, atau game kecil yang membutuhkan sistem permainan dasar, tampilan rapi, dan implementasi cepat.',
     idealFor: 'Cocok untuk ide awal game, prototype pitching, dan proyek edukasi.',
-    items: [],
+    items: [
+      '1 karakter utama dengan kontrol dasar',
+      'Maksimal 3 level sederhana',
+      'Sistem skor dan game over state',
+      'UI dasar (menu, pause, restart)',
+      'Build project desktop atau web',
+    ],
   },
   {
     slug: '/pricing/game-2d-standard',
@@ -142,7 +175,13 @@ export const pricingPlans: PricingPlan[] = [
     description:
       'Paket standard menambahkan lebih banyak konten, variasi level, dan penyempurnaan tampilan agar game terasa lebih lengkap dan menarik untuk dimainkan.',
     idealFor: 'Cocok untuk game indie kecil yang butuh variasi level dan sistem progres.',
-    items: [],
+    items: [
+      '2 karakter atau skin yang bisa dipilih',
+      'Maksimal 7 level dengan kurva kesulitan',
+      'Sistem checkpoint dan nyawa',
+      'Musuh sederhana dengan pola AI ringan',
+      'Leaderboard lokal + penyimpanan progres',
+    ],
   },
   {
     slug: '/pricing/game-2d-expert',
@@ -153,6 +192,63 @@ export const pricingPlans: PricingPlan[] = [
     description:
       'Paket expert ditujukan untuk proyek yang membutuhkan lebih banyak detail, konten, dan penyempurnaan gameplay agar siap dipresentasikan atau dikembangkan lebih lanjut.',
     idealFor: 'Cocok untuk game yang ingin ditingkatkan ke tahap presentasi, demo, atau produksi lanjutan.',
+    items: [
+      'Sistem ability/skill lengkap dengan cooldown',
+      'Maksimal 12 level + 1 boss battle',
+      'Cutscene intro/outro sederhana',
+      'Sistem inventori ringan atau collectable',
+      'Polish VFX/SFX dan balancing gameplay',
+    ],
+  },
+];
+
+export const PricingPlan1: PricingPlan1[] = [
+  {
+    slug: '/pricing/landing-page',
+    name: 'Landing Page',
+    price: 'Rp499.000',
+    highlight: false,
+    summary: 'Halaman fokus konversi untuk kampanye, produk, atau promosi singkat.',
+    items: [],
+  },
+  {
+    slug: '/pricing/company-profile',
+    name: 'Company Profile',
+    price: 'Rp1.499.000',
+    highlight: true,
+    summary: 'Website profesional untuk membangun kredibilitas dan kepercayaan bisnis.',
+    items: [],
+  },
+  {
+    slug: '/pricing/e-commerce-website',
+    name: 'E-Commerce Website',
+    price: 'Rp2.899.000',
+    highlight: false,
+    summary: 'Toko online untuk menampilkan katalog, produk, dan proses pemesanan.',
+    items: [],
+  },
+  {
+    slug: '/pricing/game-2d-basic',
+    name: 'Game 2D Basic',
+    price: 'Rp5.999.000',
+    highlight: false,
+    summary: 'Paket awal untuk game 2D sederhana dengan mekanik inti yang solid.',
+    items: [],
+  },
+  {
+    slug: '/pricing/game-2d-standard',
+    name: 'Game 2D Standard',
+    price: 'Rp7.999.000',
+    highlight: false,
+    summary: 'Paket menengah dengan fitur lebih lengkap dan polish visual lebih baik.',
+    items: [],
+  },
+  {
+    slug: '/pricing/game-2d-expert',
+    name: 'Game 2D Expert',
+    price: 'Rp11.999.000',
+    highlight: false,
+    summary: 'Paket paling lengkap untuk game 2D dengan scope yang lebih serius.',
     items: [],
   },
 ];

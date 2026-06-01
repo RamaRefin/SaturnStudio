@@ -113,6 +113,7 @@ export function PricingDetailPage({ plan }: PricingDetailPageProps) {
                   title="Rincian paket"
                   description="Setiap paket dibuat dengan fokus yang berbeda agar Anda bisa memilih sesuai kebutuhan bisnis atau project."
                 />
+                <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-space/50">Fitur yang didapat pada paket ini</p>
                 <ul className="mt-8 grid gap-4 sm:grid-cols-2">
                   {plan.items.map((item) => (
                     <li key={item} className="flex items-start gap-3 rounded-2xl border border-space/5 bg-space/3 p-4">
