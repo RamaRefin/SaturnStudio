@@ -1,5 +1,6 @@
 import type { PricingPlan } from '../data/siteContent';
 import { IconArrow, IconCheck, Reveal, SectionHeading } from './ui';
+import {Header} from './sections/Header';
 
 type PricingDetailPageProps = {
   plan: PricingPlan;
@@ -19,6 +20,7 @@ export function PricingDetailPage({ plan }: PricingDetailPageProps) {
   const galleryImages = buildGalleryImages(plan.slug);
 
   return (
+    
     <div className="bg-ice text-space">
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute left-[-8rem] top-[-10rem] h-80 w-80 rounded-full bg-blue/10 blur-3xl animate-float" />
@@ -26,6 +28,7 @@ export function PricingDetailPage({ plan }: PricingDetailPageProps) {
         <div className="absolute bottom-[-8rem] left-[20%] h-64 w-64 rounded-full bg-space/5 blur-3xl animate-float [animation-delay:3s]" />
       </div>
 
+<Header />
       <main className="px-5 py-8 sm:px-6 lg:px-8 lg:py-10">
         <div className="mx-auto max-w-7xl">
           <Reveal>

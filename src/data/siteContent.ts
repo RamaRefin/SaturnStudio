@@ -39,9 +39,9 @@ export type PricingPlan = {
 };
 
 export const contactDetails = {
-  whatsapp: '6281234567890',
-  email: 'hello@saturnstudio.dev',
-  instagram: '@saturnstudio',
+  whatsapp: '6281901025284',
+  email: 'Cilokmasfin@gmail.com',
+  instagram: '@dreamsaturn.id',
   location: 'Remote-first, melayani seluruh Indonesia',
 };
 
@@ -51,7 +51,7 @@ export const services: Service[] = [
   { title: 'Website UMKM', description: 'Membantu UMKM tampil profesional secara online.' },
   { title: 'Website Personal Branding', description: 'Bangun citra profesional melalui website pribadi.' },
   { title: 'Website Portofolio', description: 'Tampilkan karya dan pengalaman secara elegan.' },
-  { title: 'Game Development 2D ', description: 'Pembuatan game 2D mobile' },
+  { title: 'Website E-Commerce ', description: 'Membuat produk anda menjadi mudah dijangkau' },
 ];
 
 export const features: Feature[] = [
@@ -151,7 +151,7 @@ export const pricingPlans: PricingPlan[] = [
   },
   {
     slug: '/pricing/game-2d-basic',
-    name: 'Game 2D Basic',
+    name: 'Game 2D Basic (Unity)',
     price: 'Rp5.999.000',
     highlight: false,
     summary: 'Paket awal untuk game 2D sederhana dengan mekanik inti yang solid.',
@@ -168,7 +168,7 @@ export const pricingPlans: PricingPlan[] = [
   },
   {
     slug: '/pricing/game-2d-standard',
-    name: 'Game 2D Standard',
+    name: 'Game 2D Standard (Unity)',
     price: 'Rp7.999.000',
     highlight: false,
     summary: 'Paket menengah dengan fitur lebih lengkap dan polish visual lebih baik.',
@@ -185,7 +185,7 @@ export const pricingPlans: PricingPlan[] = [
   },
   {
     slug: '/pricing/game-2d-expert',
-    name: 'Game 2D Expert',
+    name: 'Game 2D Expert (Unity)',
     price: 'Rp11.999.000',
     highlight: false,
     summary: 'Paket paling lengkap untuk game 2D dengan scope yang lebih serius.',
@@ -227,28 +227,28 @@ export const PricingPlan1: PricingPlan1[] = [
     summary: 'Toko online untuk menampilkan katalog, produk, dan proses pemesanan.',
     items: [],
   },
-  {
-    slug: '/pricing/game-2d-basic',
-    name: 'Game 2D Basic',
-    price: 'Rp5.999.000',
-    highlight: false,
-    summary: 'Paket awal untuk game 2D sederhana dengan mekanik inti yang solid.',
-    items: [],
-  },
-  {
-    slug: '/pricing/game-2d-standard',
-    name: 'Game 2D Standard',
-    price: 'Rp7.999.000',
-    highlight: false,
-    summary: 'Paket menengah dengan fitur lebih lengkap dan polish visual lebih baik.',
-    items: [],
-  },
-  {
-    slug: '/pricing/game-2d-expert',
-    name: 'Game 2D Expert',
-    price: 'Rp11.999.000',
-    highlight: false,
-    summary: 'Paket paling lengkap untuk game 2D dengan scope yang lebih serius.',
-    items: [],
-  },
+  // {
+  //   slug: '/pricing/game-2d-basic',
+  //   name: 'Game 2D Basic',
+  //   price: 'Rp5.999.000',
+  //   highlight: false,
+  //   summary: 'Paket awal untuk game 2D sederhana dengan mekanik inti yang solid.',
+  //   items: [],
+  // },
+  // {
+  //   slug: '/pricing/game-2d-standard',
+  //   name: 'Game 2D Standard',
+  //   price: 'Rp7.999.000',
+  //   highlight: false,
+  //   summary: 'Paket menengah dengan fitur lebih lengkap dan polish visual lebih baik.',
+  //   items: [],
+  // },
+  // {
+  //   slug: '/pricing/game-2d-expert',
+  //   name: 'Game 2D Expert',
+  //   price: 'Rp11.999.000',
+  //   highlight: false,
+  //   summary: 'Paket paling lengkap untuk game 2D dengan scope yang lebih serius.',
+  //   items: [],
+  // },
 ];
